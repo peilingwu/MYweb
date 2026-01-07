@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的亮眼名片</title>
+    <style>
+        /* 這裡放剛才的 CSS 裝潢 */
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: "Microsoft JhengHei", sans-serif;
+        }
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-10px); }
+        .photo {
+            width: 100px;
+            height: 100px;
+            background: #ff7eb3;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background-image: url('https://via.placeholder.com/100'); /* 這裡可以換成你的照片網址 */
+            background-size: cover;
+        }
+        .skills span {
+            display: inline-block;
+            background: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 14px;
+            margin: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 25px;
+            border: none;
+            background: #764ba2;
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="photo"></div>
+        <h1>我是未來大師</h1>
+        <p>網頁前端設計師</p>
+        <div class="skills">
+            <span>✨ 創意設計</span>
+            <span>💻 寫程式碼</span>
+            <span>🚀 快速學習</span>
+        </div>
+        <button onclick="sayHi()">跟我聯絡</button>
+    </div>
+
+    <script>
+        function sayHi() {
+            alert("你好！恭喜你成功發布了真正的網頁！");
+        }
+    </script>
+</body>
+</html>
