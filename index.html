@@ -32,19 +32,16 @@
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
-
-        /* 專業毛玻璃卡片 */
-        .card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(15px); /* 背景模糊，超高級感 */
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 50px 40px;
-            border-radius: 30px;
-            text-align: center;
-            color: white;
-            box-shadow: 0 25px 50px rgba(0,0,0,0.3);
-            max-width: 350px;
-            width: 90%;
+        .card:hover {
+        transform: translateY(-10px); /* 往上浮起 */
+    
+        /* 這裡就是發光的魔法：由內而外噴發三層光芒 */
+        box-shadow: 
+            0 0 20px rgba(255, 255, 255, 0.4), /* 第一層：白色微光 */
+            0 0 40px rgba(99, 102, 241, 0.6),  /* 第二層：藍紫色光圈 */
+            0 0 60px rgba(168, 85, 247, 0.4);  /* 第三層：最外圈的紫色氛圍 */
+    
+            border: 1px solid rgba(255, 255, 255, 0.8); /* 邊框變亮，像通電一樣 */
         }
 
         /* 大頭照特效 */
@@ -157,3 +154,4 @@
     </script>
 </body>
 </html>
+
